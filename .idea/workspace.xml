@@ -269,7 +269,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481574270410</updated>
-      <workItem from="1481574272916" duration="74000" />
+      <workItem from="1481574272916" duration="112000" />
     </task>
     <task id="LOCAL-00001" summary="more gitignore">
       <created>1481574320951</created>
@@ -285,11 +285,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481574338508</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="removing one more thing that's in gitignore">
+      <created>1481574382249</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1481574382249</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74000" />
+    <option name="totallyTimeSpent" value="112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="2135" extended-state="0" />
@@ -328,7 +335,8 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
     <MESSAGE value="more gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="more gitignore" />
+    <MESSAGE value="removing one more thing that's in gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="removing one more thing that's in gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
