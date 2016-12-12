@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc0886e2-cc85-4654-ad18-b950b777b4a6" name="Default" comment="adding gitignore">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/java-apprentice-badge.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/goodairware/jab/App.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/java-apprentice-badge-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.goodairware.jab.AppTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.goodairware.jab.AppTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/goodairware/jab/AppTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="java-apprentice-badge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -828,7 +819,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481573327287</updated>
-      <workItem from="1481573328558" duration="776000" />
+      <workItem from="1481573328558" duration="832000" />
     </task>
     <task id="LOCAL-00001" summary="adding gitignore">
       <created>1481573955182</created>
@@ -844,11 +835,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481574077086</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adding gitignore">
+      <created>1481574107608</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1481574107609</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="776000" />
+    <option name="totallyTimeSpent" value="832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="2135" extended-state="0" />
