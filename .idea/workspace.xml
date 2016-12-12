@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4945fb6-39ab-460e-864b-df08b1d8a9a8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="java-apprentice-badge.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -269,7 +270,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481574270410</updated>
-      <workItem from="1481574272916" duration="112000" />
+      <workItem from="1481574272916" duration="182000" />
     </task>
     <task id="LOCAL-00001" summary="more gitignore">
       <created>1481574320951</created>
@@ -296,7 +297,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112000" />
+    <option name="totallyTimeSpent" value="182000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="2135" extended-state="0" />
