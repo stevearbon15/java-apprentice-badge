@@ -22,11 +22,11 @@ public class DescendingSorter {
   }
 
   private void run(String[] args) {
-    if (args.length > 1) {
+    try {
       new Sorter(Comparator.reverseOrder()).sort(args[0], "output/" + args[1]);
     }
-    else {
-      LOG.warn("Please provide an input file path and an output file path.");
+    catch (ArrayIndexOutOfBoundsException e) {
+      LOG.error("Please provide an input file path and an output file path.", e);
     }
   }
 }
