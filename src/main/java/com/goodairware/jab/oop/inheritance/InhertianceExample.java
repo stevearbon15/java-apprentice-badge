@@ -33,6 +33,15 @@ public class InhertianceExample {
       file.getParentFile().mkdirs();
     }
 
+    String writerType = null;
+    if (writer instanceof LowercaseInheritanceWriter) {
+      writerType = "LowercaseInheritanceWriter";
+    }
+    else if (writer instanceof UppercaseInheritanceWriter) {
+      writerType = "UppercaseInheritanceWriter";
+    }
+    LOG.info("Writing with a {} type writer.", writerType);
+
     writer.writeModifiedMessage("This is my message", file);
   }
 }
