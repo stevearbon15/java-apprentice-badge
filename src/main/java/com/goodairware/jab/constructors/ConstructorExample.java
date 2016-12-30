@@ -1,9 +1,16 @@
 package com.goodairware.jab.constructors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.function.Function;
+
 /**
  * Class created by sarbon15 on 12/30/16.
  */
 public class ConstructorExample {
+  private static final Logger LOG = LoggerFactory.getLogger(ConstructorExample.class);
+
   String type;
   long amount;
   double time;
@@ -26,5 +33,23 @@ public class ConstructorExample {
     this.amount = amount;
     this.time = time;
     this.name = name;
+  }
+
+  public void outputStuff(Function<String, String> modifier) {
+    LOG.info(modifier.apply(toString()));
+  }
+
+  public void outputStuff() {
+    outputStuff(str->str);
+  }
+
+  @Override
+  public String toString() {
+    return "ConstructorExample{" +
+           "type='" + type + '\'' +
+           ", amount=" + amount +
+           ", time=" + time +
+           ", name='" + name + '\'' +
+           '}';
   }
 }
