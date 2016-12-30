@@ -6,10 +6,10 @@ import org.slf4j.LoggerFactory;
 import java.util.Comparator;
 
 /**
- * Class created by sarbon15 on 12/12/16.
+ * Sorts a file into ascending order
  */
-public class DescendingSorter {
-  private static final Logger LOG = LoggerFactory.getLogger(DescendingSorter.class);
+public class NaturalSorter {
+  private static final Logger LOG = LoggerFactory.getLogger(NaturalSorter.class);
 
   /**
    * Runs the sorter
@@ -17,13 +17,13 @@ public class DescendingSorter {
    * @param args command line input args
    */
   public static void main(String[] args) {
-    DescendingSorter descendingSorter = new DescendingSorter();
-    descendingSorter.run(args);
+    NaturalSorter naturalSorter = new NaturalSorter();
+    naturalSorter.run(args);
   }
 
   private void run(String[] args) {
     try {
-      new Sorter(Comparator.reverseOrder()).sort(args[0], "output/" + args[1]);
+      new Sorter(Comparator.naturalOrder()).sort(args[0], "output/" + args[1]);
     }
     catch (ArrayIndexOutOfBoundsException e) {
       LOG.error("Please provide an input file path and an output file path.", e);

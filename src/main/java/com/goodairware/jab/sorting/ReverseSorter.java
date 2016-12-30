@@ -6,10 +6,10 @@ import org.slf4j.LoggerFactory;
 import java.util.Comparator;
 
 /**
- * Sorts a file into ascending order
+ * Class created by sarbon15 on 12/12/16.
  */
-public class AscendingSorter {
-  private static final Logger LOG = LoggerFactory.getLogger(AscendingSorter.class);
+public class ReverseSorter {
+  private static final Logger LOG = LoggerFactory.getLogger(ReverseSorter.class);
 
   /**
    * Runs the sorter
@@ -17,8 +17,8 @@ public class AscendingSorter {
    * @param args command line input args
    */
   public static void main(String[] args) {
-    AscendingSorter ascendingSorter = new AscendingSorter();
-    ascendingSorter.run(args);
+    ReverseSorter reverseSorter = new ReverseSorter();
+    reverseSorter.run(args);
   }
 
   private void run(String[] args) {
