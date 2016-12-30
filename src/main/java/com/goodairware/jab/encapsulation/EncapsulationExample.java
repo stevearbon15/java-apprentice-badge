@@ -6,6 +6,8 @@ package com.goodairware.jab.encapsulation;
 public class EncapsulationExample {
   // All these fields should be private and only accessible through
   // the means that we provide. In this way, we can protect the data.
+  // If any of these fields were less than private, we couldn't protect
+  // the data from bad values.
   private String name;
   private String ssn;
   private String dept;
@@ -28,9 +30,10 @@ public class EncapsulationExample {
 
   /* Accessors */
 
-  // Here is an example of some good encapsulation. Names, departments, and ages
-  // can change, but SSNs should never change. Therefore, it should only be set
-  // on construction and then never modified. It is immutable.
+  // Here is an example of some good encapsulation as well as access modifiers.
+  // Names, departments, and ages can change, but SSNs should never change.
+  // Therefore, it should only be set on construction and then never modified.
+  // It is immutable.
 
   public String getName() {
     return name;
