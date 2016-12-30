@@ -31,21 +31,21 @@ public class InhertianceExample {
   private void runWriter(String message, String arg, InheritanceWriter writer) {
     File file = new File("output/inheritance/" + arg);
     if (!file.exists()) {
-      LOG.info("Creating file " + file.getPath());
+      LOG.trace("Creating file " + file.getPath());
       file.getParentFile().mkdirs();
     }
     if (writer instanceof LowercaseInheritanceWriter) {
-      LOG.info("Writing with a LowercaseInheritanceWriter type writer.");
+      LOG.debug("Writing with a LowercaseInheritanceWriter type writer.");
       LowercaseInheritanceWriter tempWriter = (LowercaseInheritanceWriter)writer;
       tempWriter.writeModifiedMessage(message, file);
     }
     else if (writer instanceof UppercaseInheritanceWriter) {
-      LOG.info("Writing with a UppercaseInheritanceWriter type writer.");
+      LOG.debug("Writing with a UppercaseInheritanceWriter type writer.");
       UppercaseInheritanceWriter tempWriter = (UppercaseInheritanceWriter)writer;
       tempWriter.writeModifiedMessage(message, file);
     }
     else {
-      LOG.info("Writing with an InheritanceWriter type writer using default method.");
+      LOG.debug("Writing with an InheritanceWriter type writer using default method.");
       writer.writeModifiedMessage(message, file);
     }
   }

@@ -1,0 +1,29 @@
+<configuration debug="false">
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <!-- encoders are  by default assigned the system ch.qos.logback.classic.encoder.PatternLayoutEncoder -->
+    <encoder>
+      <pattern>%date %-5level %logger{0} %X{node}[%thread] - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>${user.home}/java_badge.log</file>
+    <append>false</append>
+    <encoder>
+      <pattern>%date %-5level %logger{0} %X{node}[%thread] - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="jdbc" level="debug">
+    <appender-ref ref="STDOUT"/>
+  </logger>
+  <logger name="filer" level="trace">
+    <appender-ref ref="FILE"/>
+  </logger>
+
+  <root level="debug">
+    <appender-ref ref="STDOUT"/>
+    <appender-ref ref="FILE"/>
+  </root>
+
+</configuration>
