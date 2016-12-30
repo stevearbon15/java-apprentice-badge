@@ -10,8 +10,8 @@ import java.io.IOException;
 /**
  * Class created by sarbon15 on 12/30/16.
  */
-public abstract class BaseInheritanceWriter {
-  private static final Logger LOG = LoggerFactory.getLogger(BaseInheritanceWriter.class);
+public class InheritanceWriter {
+  private static final Logger LOG = LoggerFactory.getLogger(InheritanceWriter.class);
 
   /**
    * A method to modify the message before writing it.
@@ -19,7 +19,9 @@ public abstract class BaseInheritanceWriter {
    * @param message The message to modify.
    * @param file    The file to write it to.
    */
-  public abstract void writeModifiedMessage(String message, File file);
+  public void writeModifiedMessage(String message, File file) {
+    writeMessage(message, file);
+  }
 
   /**
    * Writes a message to a file

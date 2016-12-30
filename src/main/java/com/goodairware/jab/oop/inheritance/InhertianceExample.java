@@ -26,7 +26,7 @@ public class InhertianceExample {
     runWriter(args[1], new LowercaseInheritanceWriter());
   }
 
-  private void runWriter(String arg, BaseInheritanceWriter writer) {
+  private void runWriter(String arg, InheritanceWriter writer) {
     File file = new File("output/inheritance/" + arg);
     if (!file.exists()) {
       LOG.info("Creating file " + file.getPath());
