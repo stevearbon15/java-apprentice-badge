@@ -1,6 +1,5 @@
 package com.goodairware.jab.exception;
 
-import com.goodairware.jab.sorting.AscendingSorter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +12,7 @@ import java.io.IOException;
  * Class created by sarbon15 on 12/30/16.
  */
 public class ExceptionExample {
-  private static final Logger LOG = LoggerFactory.getLogger(AscendingSorter.class);
+  private static final Logger LOG = LoggerFactory.getLogger(ExceptionExample.class);
 
   /**
    * Default constructor for ExceptionExample
