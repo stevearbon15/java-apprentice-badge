@@ -22,26 +22,31 @@ public class InhertianceExample {
   }
 
   private void run(String[] args) {
-    runWriter(args[0], new UppercaseInheritanceWriter());
-    runWriter(args[1], new LowercaseInheritanceWriter());
+    String message = "This is my message.";
+    runWriter(message, args[0], new InheritanceWriter());
+    runWriter(message, args[1], new UppercaseInheritanceWriter());
+    runWriter(message, args[2], new LowercaseInheritanceWriter());
   }
 
-  private void runWriter(String arg, InheritanceWriter writer) {
+  private void runWriter(String message, String arg, InheritanceWriter writer) {
     File file = new File("output/inheritance/" + arg);
     if (!file.exists()) {
       LOG.info("Creating file " + file.getPath());
       file.getParentFile().mkdirs();
     }
-
     if (writer instanceof LowercaseInheritanceWriter) {
       LOG.info("Writing with a LowercaseInheritanceWriter type writer.");
       LowercaseInheritanceWriter tempWriter = (LowercaseInheritanceWriter)writer;
-      tempWriter.writeModifiedMessage("This is my message", file);
+      tempWriter.writeModifiedMessage(message, file);
     }
     else if (writer instanceof UppercaseInheritanceWriter) {
       LOG.info("Writing with a UppercaseInheritanceWriter type writer.");
       UppercaseInheritanceWriter tempWriter = (UppercaseInheritanceWriter)writer;
-      tempWriter.writeModifiedMessage("This is my message", file);
+      tempWriter.writeModifiedMessage(message, file);
+    }
+    else {
+      LOG.info("Writing with an InheritanceWriter type writer using default method.");
+      writer.writeModifiedMessage(message, file);
     }
   }
 }
